@@ -1,4 +1,4 @@
-# DDC-2022-11
+# Demo voor de DDC bijeenkomst van 15 november 2022
 Deze repository bevat demo-bestanden voor mijn presentatie op het Dutch Dynamics Community event van 15 november 2022.
 Het onderwerp van de presentatie is:
 
