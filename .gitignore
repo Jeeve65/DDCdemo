@@ -1,0 +1,4 @@
+**/*.code-workspace
+**/*.app
+**/.vscode/*
+**/.snapshots/*
