@@ -3,7 +3,6 @@ page 50103 "DEMO Customer Level Cues"
     PageType = CardPart;
     ApplicationArea = All;
     UsageCategory = Administration;
-    //NEW UsageCategory = None;
     SourceTable = "DEMO Setup";
     RefreshOnActivate = true;
 
