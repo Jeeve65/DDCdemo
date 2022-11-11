@@ -16,7 +16,7 @@ table 50100 "DEMO Setup"
             Caption = 'Customer Level';
         }
 
-        // fields used as cues on the Business Manager Role Center
+        // fields used as cues
         field(1000; Level0; Integer)
         {
             Caption = 'Level 0';

@@ -1,8 +1,13 @@
-pageextension 50101 "DEMO Business Center Role Cent" extends "Business Manager Role Center"
+page 50104 "DEMO Customer Level RC"
 {
+    PageType = RoleCenter;
+    ApplicationArea = All;
+    UsageCategory = Administration;
+    Caption = 'Customer Level Rolecenter';
+
     layout
     {
-        addlast(rolecenter)
+        area(RoleCenter)
         {
             part(DEMOCustomerLevel; "DEMO Customer Level Cues")
             {
@@ -14,14 +19,27 @@ pageextension 50101 "DEMO Business Center Role Cent" extends "Business Manager R
 
     actions
     {
-        addlast(embedding)
+        area(embedding)
         {
+            action(DEMOCustomerList)
+            {
+                Caption = 'Customers';
+                ApplicationArea = All;
+                RunObject = page "Customer List";
+            }
             action(DEMOLevel0)
             {
                 Caption = 'No Level';
                 ApplicationArea = All;
                 RunObject = page "DEMO Customer Level";
                 RunPageView = where("DEMO Customer Level" = const(0));
+            }
+            action(DEMOLevelVIP)
+            {
+                Caption = 'VIPs';
+                ApplicationArea = All;
+                RunObject = page "DEMO Customer Level";
+                RunPageView = where("DEMO Customer Level" = filter(4));
             }
             action(DEMOLevelOther)
             {
