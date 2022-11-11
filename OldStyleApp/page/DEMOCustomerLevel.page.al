@@ -9,7 +9,6 @@ page 50102 "DEMO Customer Level"
     Caption = 'Customer Level';
     ShowFilter = false;
 
-
     layout
     {
         area(Content)
@@ -38,24 +37,12 @@ page 50102 "DEMO Customer Level"
 
     views
     {
-        view(NonBlockedCustomer)
+        view("REALVIPS")
         {
-            Caption = 'Not blocked';
-            Filters = where(Blocked = const(" "));
-            //NEW Filters = where(Blocked = const("Customer Blocked"::" "));
-            OrderBy = ascending("DEMO Customer Level", "No.");
+            Caption = 'Real Vips';
+            Filters = where("DEMO Customer Level" = const(4));
+            OrderBy = descending(Name);
             SharedLayout = false;
-
-            layout
-            {
-                movefirst(Customers; DEMOCustomerLevel)
-
-                modify(DEMOCustomerLevel)
-                {
-                    Width = 20;
-                    QuickEntry = false;
-                }
-            }
         }
     }
 
