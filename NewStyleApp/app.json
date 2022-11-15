@@ -1,6 +1,6 @@
 {
-  "id": "659c8956-50fd-4729-9bf4-8440895f095e",
-  "name": "NewStyleApp",
+  "id": "daca06f7-4f25-41bd-8441-0579e43fc378",
+  "name": "New Style App",
   "publisher": "Default publisher",
   "version": "1.0.0.0",
   "brief": "",
@@ -25,8 +25,10 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
+  "target": "Cloud",
   "runtime": "10.0",
   "features": [
     "NoImplicitWith"
   ]
+
 }
