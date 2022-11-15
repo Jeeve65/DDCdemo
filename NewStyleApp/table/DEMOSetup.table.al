@@ -57,6 +57,21 @@ table 50100 "DEMO Setup"
             CalcFormula = count(Customer where("DEMO Customer Level" = const(4)));
             Editable = false;
         }
+
+        field(2000; Customer10000; Integer)
+        {
+            Caption = 'Customer 10000';
+            FieldClass = FlowField;
+            CalcFormula = count("Sales Header" where("Document Type" = const(Invoice), "Sell-to Customer No." = const('10000')));
+            Editable = false;
+        }
+        field(2010; Customer20000; Integer)
+        {
+            Caption = 'Customer 20000';
+            FieldClass = FlowField;
+            CalcFormula = count("Sales Header" where("Document Type" = const(Invoice), "Sell-to Customer No." = const('20000')));
+            Editable = false;
+        }
     }
 
     keys
