@@ -1,0 +1,11 @@
+name:
+  'Weekly Reminder'
+
+on:
+  schedule:
+    - cron:  "15 09 * * 5"
+    
+runs:
+  using: "composite"
+  steps:
+    - uses: ./.github/actions/my-action
